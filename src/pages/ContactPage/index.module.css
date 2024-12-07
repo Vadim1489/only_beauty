@@ -1,0 +1,81 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    width: 1400px;
+    margin: auto;
+    padding-top: 30px;
+    background-color: #f5f2ec;
+} 
+
+.container a:hover {
+    color: #9b7949;;
+}
+
+.container h2 {
+    margin: 10px 0 10px 100px;
+    line-height: 2;
+}
+
+.container_info {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-around;
+    gap: 50px;
+    width: 1000px;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+.container_info p {
+    font-size: 19px;
+    font-weight: 500;
+    line-height: 0.7;
+}
+
+.container_info a {
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.adress h5 {
+    line-height: 1.3;
+    font-weight: 700;
+}
+
+.adress {
+    width: 500px;
+    text-align: center;
+    border: 1px solid #ffffffbe;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: #ffffffbe;
+}
+.phone {
+    width: 500px;
+    text-align: center;
+    border: 1px solid #ffffffbe;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: #ffffffbe;
+}
+
+.mail {
+    width: 500px;
+    text-align: center;
+    border: 1px solid #ffffffbe;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: #ffffffbe;
+}
+
+.name{
+    width: 500px;
+    text-align: center;
+    border: 1px solid #ffffffbe;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: #ffffffbe;
+}
+

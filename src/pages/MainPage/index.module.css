@@ -1,0 +1,83 @@
+.main_container {
+  background-color: #f5f2ec; /* Легкий серый фон для всей страницы */
+  width: 1400px;
+  margin: auto;
+  padding: 20px;
+}
+
+.main_container h2 {
+  padding-top: 30px;
+}
+
+.card_container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px; /* Расстояние между карточками */
+  justify-content: center;
+  align-items: center; /* Центрируем карточки по горизонтали */
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Центрирование контента по вертикали */
+  width: 100%; /* Ширина карточки адаптивная */
+  max-width: 350px; /* Ограничиваем максимальную ширину карточки */
+  margin: auto;
+  border-radius: 10px; /* Закругленные углы */
+  overflow: hidden; /* Убираем содержимое за границей карточки */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Тень карточки */
+  background-color: #ffffffbe; /* Белый фон */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Анимация при наведении */
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: translateY(-5px); /* Поднятие карточки при наведении */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Усиление тени */
+}
+
+.cardImage img {
+  margin-top: 10px;
+  width: 300px; /* Фиксированная ширина изображения */
+  height: 300px; /* Фиксированная высота изображения */
+  object-fit: cover; /* Обрезка изображения для соответствия контейнеру */
+  border-radius: 10px; /* Скругление только левой части */
+}
+
+.cardContent {
+  padding: 15px; /* Внутренние отступы */
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Расстояние между заголовком и описанием */
+  flex: 1; /* Контент растягивается на оставшееся место */
+}
+
+.cardTitle {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0;
+  text-align: left; /* Текст выравнивается слева */
+}
+
+
+/* Адаптивность для мобильных устройств */
+@media (max-width: 768px) {
+  .card {
+    flex-direction: column; /* Карточка становится вертикальной */
+    text-align: center; /* Выравниваем текст по центру */
+  }
+
+  .cardImage img {
+    width: 100%; /* Изображение занимает всю ширину карточки */
+    height: auto; /* Высота изменяется пропорционально */
+    border-radius: 10px 10px 0 0; /* Скругляем верхний край */
+  }
+
+  .cardContent {
+    padding: 15px;
+    text-align: center; /* Центрируем текст */
+  }
+}
+
+

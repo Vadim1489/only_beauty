@@ -1,0 +1,82 @@
+.container {
+    width: 100%;
+    max-width: 1400px; /* Ограничение ширины контейнера */
+    margin: auto;
+    padding: 20px;
+    background-color: #f5f2ec;
+  }
+
+.container h2 {
+  color: black;
+}
+  
+  .container_info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr)); /* Автоматическая адаптация колонок */
+    align-items: center;
+    gap: 30px;
+  }
+  
+  .card_container {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* Уменьшено расстояние между картинкой и текстом */
+    border-radius: 20px;
+    background-color: #ffffffbe; /* Светлый фон карточки */
+    padding: 20px; /* Увеличенный внутренний отступ */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Легкая тень */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card_container img {
+    width: 300px; /* Уменьшенная ширина изображения */
+    height: 300px; /* Пропорциональная высота изображения */
+    object-fit: cover; /* Изображение сохраняет пропорции, но заполняет контейнер */
+    border-radius: 15px;
+  }
+  
+  .card_content {
+    flex: 1; /* Контент занимает оставшееся пространство */
+    padding: 15px; /* Дополнительный отступ для текста */
+  }
+  
+  .card_content h2 {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #333; /* Темный цвет заголовка */
+  }
+  
+  .card_content p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.8; /* Больше межстрочного пространства */
+    color: #555; /* Темно-серый цвет текста */
+  }
+  
+  /* Адаптивность для мобильных устройств */
+  @media (max-width: 768px) {
+    .card_container {
+      flex-direction: column; /* Вертикальное расположение */
+      align-items: center;
+    }
+  
+    .card_container img {
+      width: 100%; /* Изображение занимает всю ширину карточки */
+      height: auto; /* Высота изменяется пропорционально */
+      border-radius: 15px 15px 0 0; /* Скругляем только верхние углы */
+    }
+  
+    .card_content {
+      text-align: center; /* Центрируем текст */
+    }
+  
+    .card_content h2 {
+      font-size: 24px; /* Уменьшение заголовка на мобильных устройствах */
+    }
+  
+    .card_content p {
+      font-size: 16px; /* Уменьшение размера текста */
+    }
+  }
+  
