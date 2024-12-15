@@ -79,3 +79,73 @@
     background-color: #ffffffbe;
 }
 
+@media (max-width:1000px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+        width: 1000px;
+        padding-top: 30px;
+        background-color: #f5f2ec;
+    } 
+
+    .container a:hover {
+        color: #9b7949;;
+    }
+
+    .container_info {
+        display: flex;
+        flex-direction: column;
+        width: 500px;
+        margin-bottom: 50px;
+        justify-content: center;
+    }
+}
+@media (max-width: 780px ) {
+    .container{
+        display: flex;
+        flex-direction: column;
+        padding-top: 25px;
+        background-color: #f5f2ec;
+        width: 780px;
+    } 
+
+    .container a:hover {
+        color: #9b7949;;
+    }
+
+    .container_info {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+        justify-content: center;
+    }
+
+}
+
+@media (max-width:480px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+        padding-top: 25px;
+        background-color: #f5f2ec;
+        width: 480px;
+    } 
+
+    .container a:hover {
+        color: #9b7949;;
+    }
+
+    .container_info {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+        justify-content: center;
+        width: 480px;
+        margin: auto;
+    }
+
+    .adress ,.name, .phone ,.mail {
+        width: 440px;
+        margin: auto;
+    }
+}

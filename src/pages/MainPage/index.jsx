@@ -6,7 +6,7 @@ export default function MainPage() {
   return (
 
       <div className={s.main_container}>
-        <div>
+
           <h2> Behandlung</h2>
           <div className={s.card_container}>
             {behandlung.map(({ id, title, description, image }) => (
@@ -20,7 +20,7 @@ export default function MainPage() {
               </div>
             ))}
           </div>
-        </div>
+
       </div>
   )
 }

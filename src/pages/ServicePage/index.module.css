@@ -8,69 +8,124 @@
   .card_container {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 20px; /* Расстояние между карточками */
+    gap: 20px; 
     justify-content: center;
-    align-items: center; /* Центрируем карточки по горизонтали */
+    align-items: center; 
   }
   
   .card {
     display: flex;
-    align-items: center; /* Центрирование контента по вертикали */
-    gap: 20px; /* Расстояние между изображением и текстом */
-    width: 100%; /* Ширина карточки адаптивная */
-    max-width: 800px; /* Ограничиваем максимальную ширину карточки */
-    border-radius: 10px; /* Закругленные углы */
-    overflow: hidden; /* Убираем содержимое за границей карточки */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Тень карточки */
+    align-items: center; 
+    gap: 20px; 
+    width: 100%; 
+    max-width: 800px; 
+    border-radius: 10px;
+    overflow: hidden; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
     background-color: #ffffffbe; 
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Анимация при наведении */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
   }
   
 
   .cardImage img {
-    width: 300px; /* Фиксированная ширина изображения */
-    height: 300px; /* Фиксированная высота изображения */
-    object-fit: cover; /* Обрезка изображения для соответствия контейнеру */
-    border-radius: 10px 0 0 10px; /* Скругление только левой части */
+    width: 300px; 
+    height: 300px; 
+    object-fit: cover; 
+    border-radius: 10px 0 0 10px; 
   }
   
   .cardContent {
-    padding: 15px; /* Внутренние отступы */
+    padding: 15px; 
     display: flex;
     flex-direction: column;
-    gap: 10px; /* Расстояние между заголовком и описанием */
-    flex: 1; /* Контент растягивается на оставшееся место */
+    gap: 10px; 
+    flex: 1;
   }
   
   .cardTitle {
     font-size: 18px;
     font-weight: bold;
     margin: 0;
-    text-align: left; /* Текст выравнивается слева */
+    text-align: left; 
   }
   
   .cardDescription {
     font-size: 14px;
-    color: #555; /* Темно-серый текст */
-    text-align: left; /* Текст выравнивается слева */
+    color: #555; 
+    text-align: left; 
   }
   
-  /* Адаптивность для мобильных устройств */
-  @media (max-width: 768px) {
+  @media (max-width:1000px) {
+    .main_container {
+      width: 1000px;
+    }
+
+    .card_container {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      margin: auto;
+      
+    }
+
     .card {
-      flex-direction: column; /* Карточка становится вертикальной */
-      text-align: center; /* Выравниваем текст по центру */
+      display: flex;
+      flex-direction: column;
+      margin: auto;
+      height: 530px;
     }
-  
-    .cardImage img {
-      width: 100%; /* Изображение занимает всю ширину карточки */
-      height: auto; /* Высота изменяется пропорционально */
-      border-radius: 10px 10px 0 0; /* Скругляем верхний край */
+
+    .card > .cardImage > img {
+      border-radius: 15px;
     }
-  
-    .cardContent {
-      padding: 15px;
-      text-align: center; /* Центрируем текст */
+  }
+  @media (max-width: 780px ) {
+    .main_container {
+      width: 780px;
+    }
+
+    .card_container {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      margin: auto;
+      
+    }
+
+    .card {
+      display: flex;
+      flex-direction: column;
+      margin: auto;
+      height: fit-content;
+      width: 580px;
+    }
+
+    .card > .cardImage > img {
+      border-radius: 15px;
+      width: 350px;
+      height: 350px;
     }
   }
   
+  @media (max-width:480px) {
+    .main_container {
+      width: 480px;
+    }
+
+    .card_container {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      margin: auto;
+      
+    }
+
+    .card {
+      display: flex;
+      flex-direction: column;
+      margin: auto;
+      height: fit-content;
+      width: 460px;
+    }
+
+    .card > .cardImage > img {
+      border-radius: 15px;
+    }
+  }

@@ -6,3 +6,43 @@
     margin: auto;
     background-color: #f5f2ec;
 }
+
+
+.header_container .burger_menu{
+    display: none;
+}
+@media (max-width:1000px) {
+    .header_container {
+        display: flex;
+        width: 1000px;
+        margin: auto;
+    }
+
+    .header_container svg {
+        width: 250px;
+        height: 100px;
+    }
+}
+@media (max-width: 780px ) {
+    .header_container .burger_menu {
+        display: block;
+        font-size: 30px;
+        cursor: pointer;
+    }
+    .header_container {
+        width: 780px;
+    }
+
+    .header_container .burger_menu {
+        width: 70px;
+        height: 70px;
+    }
+}
+
+@media (max-width:480px) {
+    .header_container {
+        width: 480px;
+    }
+}
+
+

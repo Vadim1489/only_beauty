@@ -1,9 +1,14 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import NavMenu from '../NavMenu'
 import { Link } from 'react-router-dom'
 import s from './index.module.css'
+import { IoMdMenu } from "react-icons/io";
+import { Context } from '../../context';
 
 export default function Header() {
+
+  const { openMenu } = useContext(Context);
+
   return (
     <div className={s.header_container}>
         <Link to='/'>
@@ -116,6 +121,7 @@ export default function Header() {
           </svg>
         </Link>
         <NavMenu />
+        <IoMdMenu  className={s.burger_menu} onClick={openMenu}/>
     </div>
   )
 }

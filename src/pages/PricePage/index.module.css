@@ -68,18 +68,32 @@
     font-weight: bold;
   }
   
-  /* .serviceItem:hover {
-    background-color: #f9f9f9;
-    transition: background-color 0.3s ease-in-out;
-  } */
   
-  @media (max-width: 768px) {
-    .categoryTitle {
-      font-size: 18px;
+  @media (max-width:1000px) {
+    .container {
+      width: 1000px;
     }
-  
-    .serviceName, .servicePrice {
-      font-size: 14px;
+  }
+  @media (max-width: 780px ) {
+    .container {
+      width: 780px;
+    }
+    .priceList {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      gap: 20px;
+      width: 740px;
     }
   }
   
+  @media (max-width:480px) {
+    .container {
+      width: 480px;
+    }
+    .priceList {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      gap: 20px;
+      width: 440px;
+    }
+  }

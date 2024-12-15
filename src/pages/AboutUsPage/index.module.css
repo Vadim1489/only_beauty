@@ -1,6 +1,5 @@
 .container {
-    width: 100%;
-    max-width: 1400px; /* Ограничение ширины контейнера */
+    width: 1400px;
     margin: auto;
     padding: 20px;
     background-color: #f5f2ec;
@@ -12,7 +11,7 @@
   
   .container_info {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr)); /* Автоматическая адаптация колонок */
+    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr)); 
     align-items: center;
     gap: 30px;
   }
@@ -54,29 +53,44 @@
     color: #555; /* Темно-серый цвет текста */
   }
   
-  /* Адаптивность для мобильных устройств */
-  @media (max-width: 768px) {
+  @media (max-width:1000px) {
+    .container {
+      width: 1000px;
+      margin: auto;
+      padding: 20px;
+      background-color: #f5f2ec;
+    }
+  }
+  @media (max-width: 780px ) {
+    .container {
+      width: 780px;
+    }
+    .container_info {
+      width: 760px;
+    }
     .card_container {
-      flex-direction: column; /* Вертикальное расположение */
-      align-items: center;
-    }
-  
-    .card_container img {
-      width: 100%; /* Изображение занимает всю ширину карточки */
-      height: auto; /* Высота изменяется пропорционально */
-      border-radius: 15px 15px 0 0; /* Скругляем только верхние углы */
-    }
-  
-    .card_content {
-      text-align: center; /* Центрируем текст */
-    }
-  
-    .card_content h2 {
-      font-size: 24px; /* Уменьшение заголовка на мобильных устройствах */
-    }
-  
-    .card_content p {
-      font-size: 16px; /* Уменьшение размера текста */
+      width: 560px;
+      display: flex;
+      flex-direction: column;
+      margin: auto;
     }
   }
   
+  @media (max-width:480px) {
+    .container {
+      width: 480px;
+    }
+    .container_info {
+      display: flex;
+      flex-direction: column;
+      width: 460px;
+      gap: 15px;
+      
+    }
+    .card_container {
+      width: 400px;
+      display: flex;
+      flex-direction: column;
+      margin-left: 19px;
+    }
+  }

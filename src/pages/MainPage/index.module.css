@@ -61,22 +61,33 @@
 }
 
 
-/* Адаптивность для мобильных устройств */
-@media (max-width: 768px) {
-  .card {
-    flex-direction: column; /* Карточка становится вертикальной */
-    text-align: center; /* Выравниваем текст по центру */
+@media (max-width:1000px) {
+  .main_container {
+    width: 1000px;
   }
 
-  .cardImage img {
-    width: 100%; /* Изображение занимает всю ширину карточки */
-    height: auto; /* Высота изменяется пропорционально */
-    border-radius: 10px 10px 0 0; /* Скругляем верхний край */
+}
+@media (max-width: 780px ) {
+  .main_container {
+    width: 780px;
   }
 
-  .cardContent {
-    padding: 15px;
-    text-align: center; /* Центрируем текст */
+  .card_container {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    width: 760px;
+  }
+}
+
+@media (max-width:480px) {
+  .main_container {
+    width: 480px;
+  }
+
+  .card_container {
+    display: grid;
+    grid-template-columns: repeat(1, 2fr);
+    width: 460px;
   }
 }
 

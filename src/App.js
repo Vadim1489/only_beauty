@@ -9,21 +9,30 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import ImpressumPage from './pages/ImpressumPage';
 import ServicePage from './pages/ServicePage';
+import { Context } from './context';
+import { useState } from 'react';
 
 function App() {
+
+  const [ menuActive, setMenuActive ] = useState(false);
+  const openMenu = () => setMenuActive(true);
+  const closeMenu = () => setMenuActive(false);
+
   return (
     <div>
-      <Header />
-      <Routes>
-        <Route path='/' element={<MainPage />} />
-        <Route path='/über-uns' element={<AboutUsPage />} />
-        <Route path='/preiseliste' element={<PricePage />} />
-        <Route path='/kontakt' element={<ContactPage />} />
-        <Route path='/*' element={<NotFoundPage />} />
-        <Route path='/behandlung' element={<ServicePage />} />
-        <Route path='/impressum' element={<ImpressumPage />} />
-      </Routes>
-      <Footer />
+      <Context.Provider value={{openMenu, closeMenu, menuActive}}>
+        <Header />
+        <Routes>
+          <Route path='/' element={<MainPage />} />
+          <Route path='/über-uns' element={<AboutUsPage />} />
+          <Route path='/preiseliste' element={<PricePage />} />
+          <Route path='/kontakt' element={<ContactPage />} />
+          <Route path='/*' element={<NotFoundPage />} />
+          <Route path='/behandlung' element={<ServicePage />} />
+          <Route path='/impressum' element={<ImpressumPage />} />
+        </Routes>
+        <Footer />
+      </Context.Provider>
     </div>
   );
 }
