@@ -154,9 +154,9 @@
 
 }
 
-@media (max-width:440px) {
+@media (max-width:460px) {
     .footer {
-        width: 440px;
+        width: 460px;
     }
 
     .footer_info {
@@ -170,6 +170,6 @@
     }
 
     .google_review {
-        width: 440px;
+        width: 460px;
     }
 }
