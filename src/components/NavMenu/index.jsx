@@ -6,13 +6,16 @@ import { Context } from '../../context';
 
 export default function NavMenu() {
   const { closeMenu, menuActive } = useContext(Context);
+
+  const handleLinkClick = () => closeMenu();
+  
   return (
     <nav className={[s.nav_container, menuActive ? s.active : ''].join(' ')}>
-        <Link to='/'>Start</Link>
-        <Link to='/über-uns'>Über Uns</Link>
-        <Link to='/behandlung'>Behandlung</Link>
-        <Link to='/preiseliste'>Preise</Link>
-        <Link to='/kontakt'>Kontakt</Link>
+        <Link to='/' onClick={handleLinkClick} >Start</Link>
+        <Link to='/über-uns' onClick={handleLinkClick} >Über Uns</Link>
+        <Link to='/behandlung' onClick={handleLinkClick} >Behandlung</Link>
+        <Link to='/preiseliste' onClick={handleLinkClick} >Preise</Link>
+        <Link to='/kontakt' onClick={handleLinkClick} >Kontakt</Link>
         <IoCloseSharp onClick={closeMenu} className={s._svg} />
     </nav>
   )
