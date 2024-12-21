@@ -79,9 +79,9 @@
   }
 }
 
-@media (max-width:440px) {
+@media (max-width:420px) {
   .main_container {
-    width: 440px;
+    width: 420px;
   }
   .main_container > h2 {
     padding-left: 30px;
@@ -90,7 +90,7 @@
   .card_container {
     display: grid;
     grid-template-columns: repeat(1, 2fr);
-    width: 430px;
+    width: 400px;
   }
 }
 
