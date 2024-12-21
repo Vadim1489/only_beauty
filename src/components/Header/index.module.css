@@ -39,9 +39,9 @@
     }
 }
 
-@media (max-width:480px) {
+@media (max-width:440px) {
     .header_container {
-        width: 480px;
+        width: 440px;
     }
 }
 

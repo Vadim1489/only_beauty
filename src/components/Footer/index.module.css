@@ -154,22 +154,22 @@
 
 }
 
-@media (max-width:480px) {
+@media (max-width:440px) {
     .footer {
-        width: 480px;
+        width: 440px;
     }
 
     .footer_info {
         display: flex;
         flex-direction: column;
         text-align: center;
-        width: 480px;
+        width: 440px;
         gap: 16px;
         padding-bottom: 20px;
         padding-top: 20px;
     }
 
     .google_review {
-        width: 460px;
+        width: 440px;
     }
 }
