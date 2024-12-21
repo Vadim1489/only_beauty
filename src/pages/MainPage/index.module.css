@@ -79,9 +79,9 @@
   }
 }
 
-@media (max-width:460px) {
+@media (max-width:440px) {
   .main_container {
-    width: 460px;
+    width: 440px;
   }
   .main_container > h2 {
     padding-left: 30px;
