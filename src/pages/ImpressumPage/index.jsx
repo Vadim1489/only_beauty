@@ -14,7 +14,7 @@ export default function ImpressumPage() {
         <p>Telefon: <a href={`https://wa.me/${+4915170128870}`} target='_blank'> 015170128870</a> Larissa Nitz</p> 
         <p>E-mail: <a href='mailto:onlybeautyleipzig@gmail.com'>onlybeautyleipzig@gmail.com</a></p>
         <h3>Berufsbezeichnung:</h3>
-        <p>dermatologische Kosmetikerin (verliehen in Deutschland) </p>
+        <p>Kosmetikerin (verliehen in Deutschland) </p>
         <h3>Haftungsausschluss:</h3>
         <p>Die Inhalte unserer Seiten wurden mit größter Sorgfalt erstellt. Für die <br />Richtigkeit,
             Vollständigkeit und Aktualität der Inhalte können wir jedoch<br /> keine Gewähr übernehmen.

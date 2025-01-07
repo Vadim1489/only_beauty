@@ -4,6 +4,7 @@ import lash from './media/lash.png'
 import microneedling from './media/microneedling.png'
 import manikure from './media/manikure.png'
 import pedikure from './media/pedikure.png'
+import permanent_make_up from './media/Permanent Make-up.png'
 
 export const behandlung = [
 
@@ -42,6 +43,12 @@ export const behandlung = [
         title: "Pediküre",
         description: "Die Fußpflege kombiniert Hygiene, Gesundheit und Ästhetik für gepflegte und gesunde Füße. Vorteile: Vorbeugung von Gerüchen und Infektionen, Schutz vor eingewachsenen Nägeln und Hornhautproblemen, Steigerung des Selbstbewusstseins durch gepflegte Füße und verbessertes Wohlbefinden durch gesunde Füße.",
         image: pedikure
-    }
+    },
+    {
+        id: 7,
+        title: "Permanent Make-up für Augenbrauen",
+        description: "Permanent Make-up ist eine kosmetiche Methode, bei der Farbpigmente mittels feiner Nadeln dauerhaft in die oberste Hautschicht implantiert werden, um die Augenbrauen zu betonen, zu definieren oder zu rekonstruieren. Diese Technik änhelt dem Tätowieren, ist jedoch weniger tiefgehend und verblasst mit der Zeit.",
+        image: permanent_make_up
+    },
 ];
 

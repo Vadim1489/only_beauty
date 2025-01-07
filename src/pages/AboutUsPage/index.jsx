@@ -1,5 +1,6 @@
 import React from 'react'
 import larisa_img from './media/Larissa.png'
+import Irina_img from './media/Irina.png'
 import s from './index.module.css'
 
 export default function AboutUsPage() {
@@ -21,10 +22,10 @@ export default function AboutUsPage() {
         </div>
       </div>
       <div className={s.card_container}>
-        <img src='https://cdn4.vectorstock.com/i/1000x1000/74/28/logo-nail-master-manicurist-manicure-pedicure-vector-40347428.jpg' alt="Irina_img" />
+        <img src={Irina_img} alt="Irina_img" />
         <div>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Et sint fugiat dolores<br /> minus excepturi obcaecati sit, iste corrupti quidem, unde doloribus magnam<br /> sed autem aspernatur nihil error aliquid voluptatum at.
+            Mein Name ist Irina, ich bin Maniküre- und Pediküre-Meisterin mit über zwei Jahren Erfahrung. Ich arbeite mit hochwertigen Materialien, gehe individuell auf jeden Kunden ein und verbessere ständig meine Fähigkeiten. Mein Ziel ist es, Ihre Schönheit zu betonen und durch perfekte Pflege gute Laune zu schaffen.
           </p>
         </div>
       </div>

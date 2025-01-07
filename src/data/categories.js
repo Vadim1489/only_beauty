@@ -35,14 +35,12 @@ export const categories = [
     {
       title: 'AUGENBRAUEN / WIMPERN',
       services: [
-        { name: 'Lash Lift', price: '50€' },
-        { name: 'Brow Lift', price: '50€' },
-        { name: 'Lash Lift + Brow Lift', price: '90€' },
-        { name: 'Lash Lift + Färben', price: '60€' },
-        { name: 'Brow Lift + Färben', price: '60€' },
-        { name: 'Brow Lift + Färben + Formen', price: '80€' },
-        { name: 'Waxen / Zupen / Formen', price: '25€' },
+        { name: 'Lash Lift + Färben', price: '50€' },
         { name: 'Färben', price: '15€' },
+        { name: 'Augenbrauen Lifting + Korrektur + Färben', price: '55€' },
+        { name: 'Korrektur Färben', price: '35€' },
+        { name: 'Korrektur', price: '20€' },
+        { name: 'Augenbrauen und Wimpern Lifting Komplex (inkl. Färben und Formen) ', price: '90€' },
       ],
     },
     {
@@ -52,5 +50,11 @@ export const categories = [
         { name: 'Microneedling', price: '90€' },
       ],
     },
+    {
+      title: 'Permanent Make Up für die Augenbrauen',
+      services: [
+        {name: 'Permanent Make Up für die Augenbrauen', price: '280€'}
+      ]
+    }
 
   ];

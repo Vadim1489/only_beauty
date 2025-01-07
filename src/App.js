@@ -11,6 +11,8 @@ import ImpressumPage from './pages/ImpressumPage';
 import ServicePage from './pages/ServicePage';
 import { Context } from './context';
 import { useState } from 'react';
+import DatenschutzPage from './pages/DatenschutzPage';
+import AgbPage from './pages/AgbPage';
 
 function App() {
 
@@ -30,6 +32,8 @@ function App() {
           <Route path='/*' element={<NotFoundPage />} />
           <Route path='/behandlung' element={<ServicePage />} />
           <Route path='/impressum' element={<ImpressumPage />} />
+          <Route path='/datenschutz' element={<DatenschutzPage />} />
+          <Route path='/agb' element={<AgbPage />} />
         </Routes>
         <Footer />
       </Context.Provider>

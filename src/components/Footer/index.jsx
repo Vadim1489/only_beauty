@@ -32,7 +32,8 @@ export default function Footer() {
       </div>
       <div className={s.footer_info}>
         <p>Copyright © 2024 ONLY BEAUTY by Larissa.</p>
-        <a href="#" >Datenschutz</a>
+        <a href="/datenschutz" >Datenschutz</a>
+        <a href="/agb">AGB</a>
         <a href="/impressum">Impressum</a>
       </div>
     </div>
