@@ -1,0 +1,63 @@
+.privacyPolicy {
+    width: 1400px;
+    margin: auto;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+    color: #333;
+    background-color: #f5f2ec;
+  }
+  
+  .privacyPolicy h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .privacyPolicy section {
+    margin-bottom: 20px;
+    padding: 10px 15px;
+    background: #ffffffbe;
+    border-radius: 6px;
+  }
+  
+  .privacyPolicy h3 {
+    color: #333;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .privacyPolicy h3 {
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+  }
+  
+  .privacyPolicy p {
+    margin: 8px 0;
+  }
+  
+  .privacyPolicy ul {
+    list-style-type: disc;
+    margin-left: 20px;
+  }
+  
+  .privacyPolicy li {
+    margin-bottom: 5px;
+  }
+  
+  .privacyPolicy a {
+    color: #333;
+  }
+  
+  
+  .privacyPolicy address {
+    font-style: normal;
+    margin: 8px 0;
+    line-height: 1.6;
+  }
+  
+  
+  .privacyPolicy address a:hover {
+    color: #9b7949;
+  }
