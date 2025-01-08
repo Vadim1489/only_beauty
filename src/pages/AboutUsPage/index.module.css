@@ -94,3 +94,22 @@
       margin-left: 19px;
     }
   }
+
+  @media (max-width:380px) {
+    .container {
+      width: 380px;
+    }
+    .container_info {
+      display: flex;
+      flex-direction: column;
+      width: 370px;
+      gap: 15px;
+      
+    }
+    .card_container {
+      width: 360px;
+      display: flex;
+      flex-direction: column;
+      margin-left: 19px;
+    }
+  }

@@ -129,3 +129,28 @@
       border-radius: 15px;
     }
   }
+
+  @media (max-width:380px) {
+    .main_container {
+      width: 380px;
+    }
+
+    .card_container {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      margin: auto;
+      
+    }
+
+    .card {
+      display: flex;
+      flex-direction: column;
+      margin: auto;
+      height: fit-content;
+      width: 360px;
+    }
+
+    .card > .cardImage > img {
+      border-radius: 15px;
+    }
+  }

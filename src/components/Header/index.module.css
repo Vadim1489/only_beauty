@@ -44,5 +44,10 @@
         width: 480px;
     }
 }
+@media (max-width:380px) {
+    .header_container {
+        width: 380px;
+    }
+}
 
 

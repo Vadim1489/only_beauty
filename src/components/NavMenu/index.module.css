@@ -88,3 +88,33 @@
         height: 50px;
     }
 }
+
+@media (max-width:380px) {
+        .nav_container {
+        display: none;
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        right: 0;
+        background-color: rgb(245, 240, 236);
+        z-index: 200;
+        width: 300px;
+        height: 100%;
+        align-items: self-start;
+        justify-content: start;
+        gap: 15px;
+    }
+
+    .nav_container.active {
+        display: flex;
+    }
+
+    .nav_container > ._svg {
+        display: block;
+        position: absolute;
+        top: 30px;
+        right: 35px;
+        width: 45px;
+        height: 45px;
+    }
+}

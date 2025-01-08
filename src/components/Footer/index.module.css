@@ -173,3 +173,23 @@
         width: 460px;
     }
 }
+
+@media (max-width:380px) {
+    .footer {
+        width: 380px;
+    }
+
+    .footer_info {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 380px;
+        gap: 16px;
+        padding-bottom: 20px;
+        padding-top: 20px;
+    }
+
+    .google_review {
+        width: 360px;
+    }
+}

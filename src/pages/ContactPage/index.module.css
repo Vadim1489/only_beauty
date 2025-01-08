@@ -12,7 +12,7 @@
 }
 
 .container h2 {
-    margin: 10px 0 10px 100px;
+    margin: 10px 0 10px 35px;
     line-height: 2;
 }
 
@@ -146,6 +146,35 @@
 
     .adress ,.name, .phone ,.mail {
         width: 440px;
+        margin: auto;
+    }
+}
+
+@media (max-width:380px) {
+    .container{
+        display: flex;
+        flex-direction: column;
+        padding-top: 25px;
+        background-color: #f5f2ec;
+        width: 380px;
+    } 
+
+
+    .container a:hover {
+        color: #9b7949;;
+    }
+
+    .container_info {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+        justify-content: center;
+        width: 380px;
+        margin: auto;
+    }
+
+    .adress ,.name, .phone ,.mail {
+        width: 360px;
         margin: auto;
     }
 }

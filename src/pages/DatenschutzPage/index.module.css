@@ -61,3 +61,28 @@
   .privacyPolicy address a:hover {
     color: #9b7949;
   }
+
+
+  @media (max-width:1000px) {
+    .privacyPolicy{
+      width: 1000px;
+    }
+  }
+  @media (max-width:780px) {
+    .privacyPolicy{
+      width: 780px;
+    }
+  }
+  @media (max-width:480px) {
+    .privacyPolicy{
+      width: 480px;
+    }
+  }
+  @media (max-width:380px) {
+    .privacyPolicy{
+      width: 380px;
+    }
+    .privacyPolicy h2 {
+      font-size: 30px;
+    }
+  }

@@ -27,3 +27,25 @@
     padding-left: 25px;
     font-size: 1rem;
   }
+
+
+  @media (max-width:1000px) {
+    .container {
+        width: 1000px;
+    }
+  }
+  @media (max-width:780px) {
+    .container {
+        width: 780px;
+    }
+  }
+  @media (max-width:480px) {
+    .container {
+        width: 480px;
+    }
+  }
+  @media (max-width:380px) {
+    .container {
+        width: 380px;
+    }
+  }

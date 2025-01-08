@@ -95,3 +95,14 @@
       text-align: center;
     }
   }
+
+  @media (max-width:380px) {
+    .impressum{
+      width: 380px;
+    }
+    .impressum_container {
+      width: 360px;
+      margin: auto;
+      text-align: center;
+    }
+  }
