@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/static/css/main.5802cda9.css",
+    "main.js": "/static/js/main.b31f7e7b.js",
+    "static/media/Permanent Make-up.png": "/static/media/Permanent Make-up.c2065abccf4de6f1a1f6.png",
+    "static/media/lash.png": "/static/media/lash.ff197cdc695415b338ab.png",
+    "static/media/manikure.png": "/static/media/manikure.6ce3446b58092276bd4b.png",
+    "static/media/brow.png": "/static/media/brow.1e4c2a4714e9ccbf4f01.png",
+    "static/media/Irina.png": "/static/media/Irina.0d0ea2714b4ac82fdd13.png",
+    "static/media/microneedling.png": "/static/media/microneedling.9ff277dde4c3cf3309d7.png",
+    "static/media/klassishe kosmetik.png": "/static/media/klassishe kosmetik.a5f497c95d78fd388159.png",
+    "static/media/Larissa.png": "/static/media/Larissa.9668df4b9154bfd1a4d9.png",
+    "static/media/pedikure.png": "/static/media/pedikure.03c91f1e61753d4e26ed.png",
+    "static/media/inst_logo.svg": "/static/media/inst_logo.c80092743d94c75a7ec9a27675eaef38.svg",
+    "index.html": "/index.html",
+    "main.5802cda9.css.map": "/static/css/main.5802cda9.css.map",
+    "main.b31f7e7b.js.map": "/static/js/main.b31f7e7b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5802cda9.css",
+    "static/js/main.b31f7e7b.js"
+  ]
+}

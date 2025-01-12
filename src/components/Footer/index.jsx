@@ -2,6 +2,7 @@ import React from 'react'
 import s from './index.module.css'
 import { FaWhatsapp } from "react-icons/fa";
 import inst from './media/inst_logo.svg'
+import { Link } from 'react-router-dom';
 
 export default function Footer() {
   return (
@@ -32,9 +33,9 @@ export default function Footer() {
       </div>
       <div className={s.footer_info}>
         <p>Copyright © 2024 ONLY BEAUTY by Larissa.</p>
-        <a href="/datenschutz" >Datenschutz</a>
-        <a href="/agb">AGB</a>
-        <a href="/impressum">Impressum</a>
+        <Link to="/datenschutz" >Datenschutz</Link>
+        <Link to="/agb">AGB</Link>
+        <Link to="/impressum">Impressum</Link>
       </div>
     </div>
   )

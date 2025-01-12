@@ -13,6 +13,7 @@ import { Context } from './context';
 import { useState } from 'react';
 import DatenschutzPage from './pages/DatenschutzPage';
 import AgbPage from './pages/AgbPage';
+import CookieBanner from './components/CookieBanner';
 
 function App() {
 
@@ -35,6 +36,7 @@ function App() {
           <Route path='/datenschutz' element={<DatenschutzPage />} />
           <Route path='/agb' element={<AgbPage />} />
         </Routes>
+        <CookieBanner />
         <Footer />
       </Context.Provider>
     </div>
