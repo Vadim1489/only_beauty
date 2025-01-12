@@ -1,0 +1,73 @@
+.cookieContainer {
+    background-color: #111; /* Тёмный фон */
+    color: #fff; /* Белый текст */
+    font-family: 'Arial', sans-serif;
+    font-size: 16px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+  }
+  
+  /* Контент баннера */
+  .cookieContent {
+    margin-bottom: 15px;
+    line-height: 1.5;
+  }
+  
+  /* Ссылки */
+  .cookieLink {
+    color: #ffa500; /* Оранжевый цвет ссылки */
+    text-decoration: underline;
+    font-weight: bold;
+  }
+  
+  .cookieLink:hover {
+    color: #fff; /* Изменение цвета при наведении */
+  }
+  
+  /* Кнопки */
+  .cookieButton {
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .acceptButton {
+    background-color: #28a745; /* Зеленая кнопка */
+    color: #fff;
+  }
+  
+  .acceptButton:hover {
+    background-color: #218838; /* Темнее при наведении */
+  }
+  
+  .declineButton {
+    background-color: #dc3545; /* Красная кнопка */
+    color: #fff;
+  }
+  
+  .declineButton:hover {
+    background-color: #c82333; /* Темнее при наведении */
+  }
+  
+  /* Адаптивность */
+  @media (max-width: 768px) {
+    .cookieContainer {
+      font-size: 14px;
+      padding: 15px;
+    }
+  
+    .cookieButton {
+      font-size: 14px;
+      padding: 8px 16px;
+    }
+  }
